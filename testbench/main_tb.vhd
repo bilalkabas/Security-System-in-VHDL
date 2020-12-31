@@ -76,8 +76,8 @@ begin
         variable write_col_to_output_buf : line;  
     begin
         -- File handling
-        file_open(input_buf, "replace_with_your_directory\simulation.txt",  read_mode);
-        file_open(output_buf, "replace_with_your_directory\output.txt",  write_mode);
+        file_open(input_buf, "replace_with_your_simulation_input_directory\simulation.txt",  read_mode);
+        file_open(output_buf, "replace_with_your_simulation_output_directory\output.txt",  write_mode);
         
         while not endfile(input_buf) loop
           -- Read operation 
